@@ -1,4 +1,5 @@
 /* Master Styles */
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,5 +11,94 @@ h2, h3 {
   font-weight: lighter;
 }
 body {
-  margin: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
 }
+
+*:focus{
+	outline: none;
+}
+
+my-app {
+	display: block;
+	margin: 0 auto;
+	width: 980px;
+}
+
+my-app .wrapper {
+	background: #f3f3f3;
+	margin-top: 20px;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+
+::-webkit-input-placeholder {
+  color: lightgray;
+  font-weight: 200;
+}
+
+select,
+textarea,
+input[type="text"] {
+	vertical-align: middle;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0px 5px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #fff;
+}
+textarea:focus,
+select:focus,
+input[type="text"]:focus{
+	background-color: #a4e5ff;
+	outline: none;
+	color: #3953a2;
+}
+select {
+	width: 200px;
+}
+textarea{
+	height: 200;
+	padding: 10px;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	position: relative;
+	display: inline-block;
+	-webkit-appearance: none;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+input[type="checkbox"]:before,
+input[type="radio"]:before{
+	content:'';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+input[type="checkbox"]:before{
+	border-radius: 3px;
+}
+
+input[type="checkbox"]:checked:before,
+input[type="radio"]:checked:before{
+	background-color: #a4e5ff;
+	border: 5px solid #fff;
+	box-sizing: border-box;
+}
+
+
+
+
