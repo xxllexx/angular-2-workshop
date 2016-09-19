@@ -31,7 +31,12 @@ Before beginning, please make sure you have your environment set up, you will ne
 
 Let's add some styles for our input components
 
-1. bla
+1. Input type text
+1. Input type radio
+1. Input type checkbox
+1. Textarea
+1. Select
+1. Button
 
 ## Step 1
 
