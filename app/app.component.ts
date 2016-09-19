@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
   		<input type="radio" />
   		<input type="checkbox" />
   		<textarea></textarea>
+  		<button>+ add option</button>
   	</div>
   `
 })

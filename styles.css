@@ -34,7 +34,6 @@ my-app .wrapper {
 
 body, input[text], button {
   color: #888;
-  font-family: Cambria, Georgia;
 }
 
 ::-webkit-input-placeholder {
@@ -99,6 +98,26 @@ input[type="radio"]:checked:before{
 	box-sizing: border-box;
 }
 
+button {
+  font-weight: 200;
+  vertical-align: middle;
+  width: 150px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 3px;
+  color: #3953a2;
+  background-color: #a4e5ff;
+}
+
+button:hover{
+  color: #fff;
+}
+
+button:active{
+  color: gray;
+  background-color: #fff;
+}
 
 
 

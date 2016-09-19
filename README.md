@@ -29,6 +29,8 @@ Before beginning, please make sure you have your environment set up, you will ne
 
 ## Step 0 - First Steps
 
+Let's add some styles for our input components
+
 1. bla
 
 ## Step 1
