@@ -23,7 +23,6 @@ import { Section } from '../dto/SectionDTO';
 			<div>
 				<a href="#">+ add option</a>
 			</div>
-
 		</section>
 		<button>Remove</button>
 	`
