@@ -50,6 +50,8 @@ This directive will consist of:
 
 ## Step 2
 
+Now we will add the service that will store all Form sections
+
 ## Step 3 
 
 ## Step 4 
