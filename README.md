@@ -29,9 +29,24 @@ Before beginning, please make sure you have your environment set up, you will ne
 
 ## Step 0 - First Steps
 
-1. bla
+Let's add some styles for our input components
+
+1. Input type text
+1. Input type radio
+1. Input type checkbox
+1. Textarea
+1. Select
+1. Button
 
 ## Step 1
+
+Adding the first simple directive/component to our application: FormSection
+This directive will consist of: 
+
+1. Text input for question 
+1. Answer type selector
+1. "add option" button
+1. "remove" button
 
 ## Step 2
 
