@@ -14,5 +14,5 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-	someData = 'werwer'
+
 }
