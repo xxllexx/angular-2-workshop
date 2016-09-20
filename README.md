@@ -40,6 +40,14 @@ Let's add some styles for our input components
 
 ## Step 1
 
+Adding the first simple directive/component to our application: FormSection
+This directive will consist of: 
+
+1. Text input for question 
+1. Answer type selector
+1. "add option" button
+1. "remove" button
+
 ## Step 2
 
 ## Step 3 
