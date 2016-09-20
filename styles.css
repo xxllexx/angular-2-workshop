@@ -41,6 +41,21 @@ body, input[text], button {
   font-weight: 200;
 }
 
+ul {
+  margin: 0;
+  padding: 0;  
+  list-style-type: none;
+}
+
+ul.options{
+  margin: 10px 0;
+}
+
+ul.options li input{
+  margin-right: 10px;
+}
+
+
 select,
 textarea,
 input[type="text"] {
@@ -101,13 +116,20 @@ input[type="radio"]:checked:before{
 button {
   font-weight: 200;
   vertical-align: middle;
-  width: 150px;
   font-size: 20px;
   padding: 5px 10px;
   border: 0;
   border-radius: 3px;
   color: #3953a2;
   background-color: #a4e5ff;
+}
+
+a {
+  color: #3953a2;
+  text-decoration: none;
+}
+a:hover {
+ text-decoration: underline; 
 }
 
 button:hover{
@@ -119,5 +141,33 @@ button:active{
   background-color: #fff;
 }
 
+.sections + button {
+  background-color: lightgray;
+  color: #fff;
+}
+.sections + button:hover {
+  background-color: gray;
+}
 
+.sections + button:active {
+  background-color: white;
+  color: gray;  
+} 
 
+form-section{
+  display: block;
+  border: 5px solid #fff;
+  padding: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+form-section section + button{
+  float: right;
+  background-color: #fdc0c0;
+  color: #fff;
+}
+
+form-section section + button:hover {
+  background-color: #f59393;
+}
