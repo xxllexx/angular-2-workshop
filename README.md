@@ -54,6 +54,8 @@ Now we will add the service that will store all Form sections
 
 ## Step 3 
 
+We will add few more directives for multiple answer secection and single, also we will add types of type selector
+
 ## Step 4 
 
 ## Step 5 

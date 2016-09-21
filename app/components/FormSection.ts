@@ -6,22 +6,15 @@ import { Section } from '../dto/SectionDTO';
 	template: `
 		<section>
 			<div>
-				<input type="text" placeholder="your text"/>
+				  <input type="text" placeholder="your text"/>
 		  		<select>
-		  			<option>Single Answer</option>
-		  			<option>Multiple Answer</option>
-		  			<option>Own Answer</option>
+		  			<option *ngFor="let type of types" [value]="type.id">{{type.text}}</option>
 		  		</select>
-			</div>
-			<ul class="options">
-				<li>
-					<input type="radio" disabled/>
-					<input type="text" placeholder="option text"/>
-					<button>x</button>
-				</li>
-			</ul>
-			<div>
-				<a href="#">+ add option</a>
+          <single [options]="sectionSettings.options"></single>
+          <multiple [options]="sectionSettings.options"></multiple>
+          <div>
+            <textarea placeholder="Type here"></textarea>
+          </div>
 			</div>
 		</section>
 		<button>Remove</button>
@@ -30,5 +23,10 @@ import { Section } from '../dto/SectionDTO';
 
 export default class FormSection{
 	@Input()
-	sectionSettings: Section
+	sectionSettings: Section;
+	private types = [
+    {id: '0', text: 'Single Answer'},
+    {id: '1', text: 'Multiple Answers'},
+    {id: '2', text: 'Own Answer'}
+  ];
 }

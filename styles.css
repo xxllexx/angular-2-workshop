@@ -79,7 +79,7 @@ select {
 	width: 200px;
 }
 textarea{
-	height: 200;
+	height: 150px;
 	padding: 10px;
 }
 input[type="checkbox"],
