@@ -64,9 +64,3 @@ Let's add Data Binding to Our app
 1. Add options to Answers 
 1. Remove options from Answers
 1. Remove Sections 
-
-## Step 5 
-
-## Step 6 
-
-## Step N 
