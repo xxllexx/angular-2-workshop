@@ -50,12 +50,17 @@ This directive will consist of:
 
 ## Step 2
 
+Now we will add the service that will store all Form sections
+
 ## Step 3 
+
+We will add few more directives for multiple answer secection and single, also we will add types of type selector
 
 ## Step 4 
 
-## Step 5 
+Let's add Data Binding to Our app
 
-## Step 6 
-
-## Step N 
+1. Change Answer Types
+1. Add options to Answers 
+1. Remove options from Answers
+1. Remove Sections 
