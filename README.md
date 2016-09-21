@@ -58,6 +58,13 @@ We will add few more directives for multiple answer secection and single, also w
 
 ## Step 4 
 
+Let's add Data Binding to Our app
+
+1. Change Answer Types
+1. Add options to Answers 
+1. Remove options from Answers
+1. Remove Sections 
+
 ## Step 5 
 
 ## Step 6 

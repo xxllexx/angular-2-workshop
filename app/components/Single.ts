@@ -5,10 +5,10 @@ import {Component, Input} from '@angular/core';
   template: `
     <div>
       <ul class="options">
-        <li *ngFor="let option of options">
-          <input type="radio"/>
+        <li *ngFor="let option of options; let i = index;">
+          <input type="radio" [name]="'radio-' + sectionId"/>
           <input type="text" placeholder="option text" [value]="option"/>
-          <button>x</button>
+          <button (click)="removeOption(i)">x</button>
         </li>
       </ul>
       <div>
@@ -18,10 +18,12 @@ import {Component, Input} from '@angular/core';
   `
 })
 export default class Single {
-  @Input()
-  options = [];
-  addOption() {
-    let nr = this.options.length + 1;
-    this.options.push(`Option ${nr}`);
+  @Input() options = [];
+  @Input() sectionId;
+  addOption():void {
+    this.options.push(`Option ${this.options.length + 1}`);
+  }
+  removeOption(i):void {
+   this.options.splice(i, 1);
   }
 }

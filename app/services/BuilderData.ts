@@ -13,7 +13,7 @@ export class BuilderDataService {
 	sections:Section[] = [];
 	nextId:number = 0;
 	getSections(): Section[] {
-		return sectionsMock//;this.sections
+		return this.sections;
 	}
 	addEmptySection(): void{
 		this.addSection({
@@ -30,7 +30,9 @@ export class BuilderDataService {
 			options
 		));
 	}
-	removeSection(_id): void{
+	removeSection(_id): Section[] {
 		this.sections = this.sections.filter(({id}) => id !== _id);
+		
+		return this.sections;
 	}
 }

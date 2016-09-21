@@ -78,10 +78,16 @@ input[type="text"]:focus{
 select {
 	width: 200px;
 }
-textarea{
+textarea {
 	height: 150px;
+  width: 503px;
 	padding: 10px;
 }
+
+.own{
+  margin-top: 10px;
+}
+
 input[type="checkbox"],
 input[type="radio"]{
 	position: relative;
@@ -111,6 +117,13 @@ input[type="radio"]:checked:before{
 	background-color: #a4e5ff;
 	border: 5px solid #fff;
 	box-sizing: border-box;
+}
+
+
+
+multiple input[type="text"],
+single input[type="text"]{
+  width: 413px;
 }
 
 button {

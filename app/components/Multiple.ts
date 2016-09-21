@@ -18,10 +18,12 @@ import {Component, Input} from '@angular/core';
   `
 })
 export default class Multiple {
-  @Input()
-  options = [];
-  addOption() {
-    let nr = this.options.length + 1;
-    this.options.push(`Option ${nr}`);
+  @Input() options = ['Option 1'];
+  @Input() sectionId;
+  addOption():void {
+    this.options.push(`Option ${this.options.length + 1}`);
+  }
+  removeOption(i):void {
+   this.options.splice(i, 1);
   }
 }

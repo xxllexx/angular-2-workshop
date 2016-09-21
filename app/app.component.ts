@@ -7,7 +7,10 @@ import { BuilderDataService } from './services/BuilderData';
   	<h1>Ng Forms Builder</h1>
   	<div class="wrapper">
   		<div class="sections">
-  			<form-section *ngFor="let section of data" [sectionSettings]="section"></form-section>
+  			<form-section *ngFor="let section of data"
+  				[sectionSettings]="section"
+  				(remove)="removeSection($event)"
+			></form-section>
   		</div> 
   		<button (click)="addSection()">+</button>
   	</div>
@@ -24,7 +27,10 @@ export class AppComponent {
 	getBuilderData():void {
 		this.data = this.builderService.getSections();
 	}
-	addSection():void {
+	addSection(): void {
 		this.builderService.addEmptySection();
+	}
+	removeSection(id): void {
+		this.data = this.builderService.removeSection(id);
 	}
 }
