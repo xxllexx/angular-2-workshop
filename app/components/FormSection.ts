@@ -1,5 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+export class Section {
+  constructor (
+    public id: number,
+    public type:number = 0,
+    public question: string = '',
+    public options: Array<string> = []
+  ){}
+}
+
 @Component({
 	selector: 'form-section',
 	template: `
