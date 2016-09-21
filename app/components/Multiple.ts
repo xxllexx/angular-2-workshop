@@ -5,10 +5,10 @@ import {Component, Input} from '@angular/core';
   template: `
     <div>
       <ul class="options">
-        <li *ngFor="let option of options">
+        <li *ngFor="let option of options; let i = index;">
           <input type="checkbox"/>
           <input type="text" placeholder="option text" [value]="option"/>
-          <button>x</button>
+          <button (click)="removeOption(i)">x</button>
         </li>
       </ul>
       <div>
