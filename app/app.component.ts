@@ -13,6 +13,7 @@ import { BuilderDataService } from './services/BuilderData';
 			></form-section>
   		</div> 
   		<button (click)="addSection()">+</button>
+  		<button (click)="saveData()">Save</button>
   		<pre>
   			{{data | json}}
   		</pre>
@@ -32,8 +33,13 @@ export class AppComponent {
 	}
 	addSection(): void {
 		this.builderService.addEmptySection();
+		this.getBuilderData();
 	}
 	removeSection(id): void {
-		this.data = this.builderService.removeSection(id);
+		this.builderService.removeSection(id);
+		this.getBuilderData();
+	}
+	saveData() {
+		localStorage.setItem('formData', JSON.stringify(this.data))
 	}
 }
