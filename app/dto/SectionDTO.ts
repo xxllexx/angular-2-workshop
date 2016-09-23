@@ -6,3 +6,10 @@ export class Section {
 		public options: Array<string> = []
 	){}
 }
+
+export class Option {
+	constructor (
+		public id: number,
+		public title:string = 'Oprtion'
+	){}	
+}

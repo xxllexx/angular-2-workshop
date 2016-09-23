@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import { Option } from '../dto/SectionDTO';
 
 @Component({
   selector: 'single',
@@ -7,7 +8,7 @@ import {Component, Input} from '@angular/core';
       <ul class="options">
         <li *ngFor="let option of options; let i = index;">
           <input type="radio" [name]="'radio-' + sectionId"/>
-          <input type="text" placeholder="option text" [value]="option"/>
+          <input type="text" placeholder="option text" [(ngModel)]="option.title"/>
           <button (click)="removeOption(i)">x</button>
         </li>
       </ul>
@@ -18,10 +19,12 @@ import {Component, Input} from '@angular/core';
   `
 })
 export default class Single {
-  @Input() options = [];
+  @Input() options:Option[] = [new Option(0,`Option 1`)];
   @Input() sectionId;
   addOption():void {
-    this.options.push(`Option ${this.options.length + 1}`);
+    this.options.push(
+      new Option((this.options.length + 1),`Option ${this.options.length + 1}`)
+    )
   }
   removeOption(i):void {
    this.options.splice(i, 1);

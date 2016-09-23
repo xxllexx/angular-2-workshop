@@ -13,6 +13,9 @@ import { BuilderDataService } from './services/BuilderData';
 			></form-section>
   		</div> 
   		<button (click)="addSection()">+</button>
+  		<pre>
+  			{{data | json}}
+  		</pre>
   	</div>
   `,
   providers: [BuilderDataService]
